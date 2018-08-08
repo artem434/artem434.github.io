@@ -1,0 +1,124 @@
+@media screen and (max-width:940px) {
+	.menu-trigger {
+		display: block;
+		width: 150px;
+		margin: 0px auto;
+	}
+	.menu__item {
+		display: block;
+		padding: 0 0 10px 0;
+		background: black;
+		width: 150px;
+		opacity: 0.7;
+		margin: 0 auto;
+	}
+	.menu__block {
+		display: none;
+		width: 150px;
+		margin: 0px auto;
+		padding-top: 34px;
+	}
+	.icon {
+		float: left;
+	}
+	.phone {
+		float: left;
+	}
+}
+@media screen and (max-width: 840px) {
+	.contact {
+		display: block;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 815px) {
+	.pricing {
+		display: grid;
+		grid-template-columns: 650px;
+		justify-content: center;
+	}
+	.pricing__row {
+		display: flex;
+	}
+	.pricing__row2 {
+		display: flex;
+		justify-content: center;
+	}
+	.pricing__text {
+		padding: 10px;
+	}
+	.pricing__titel {
+		padding: 0px;
+	}
+	.pricing__total {
+		padding: 0px;
+	}
+	.pricing__item {
+		padding-bottom: 10px;
+	}
+	.pricing__button {
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: 787px) {
+	.thumbs {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 675px) {
+	.pricing {
+		display: grid;
+		grid-template-columns: 300px;
+		justify-content: center;
+	}
+	.pricing__row {
+		display: grid;
+	}
+	.pricing__row2 {
+		display: grid;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 600px) {
+	.thumbs__text {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	.thumbs__date {
+		font-size: 9px;
+		line-height: 1.5;
+	}
+	.partners {
+		display: none;
+	}
+	.trainer {
+		display: grid;
+		grid-template-columns: repeat(1, 270px);
+	}
+}
+@media screen and (max-width: 520px) {
+	.form {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 36px 36px 110px;
+	}
+}
+@media screen and (max-width: 470px) {
+	.social {
+		display: grid;
+		grid-template-columns: 290px;
+		justify-content: center;
+	}
+	.social__icons {
+		float: left;
+		padding: 15px 0px 0px 39px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.title-copy1 {
+		width: 300px;
+		font-size: 17px;
+	}
+}
