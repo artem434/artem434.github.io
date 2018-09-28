@@ -17,7 +17,7 @@
 		font-size: 50px;
 	}
 	.header-titel__subitem{
-	width: 520px;
+	
     text-align: left;
     font-size: 14px;
 	}
@@ -54,6 +54,9 @@
 .about-us-box__left {
     width: 100%;
 }
+.about-us-box__right {
+	margin-top: 30px;
+}
 .buttons__link_right {
   float: none;
     margin-bottom: 49px;
@@ -64,6 +67,46 @@
     
 }
 }
-@media (max-width: 680px){
-	
+@media (max-width: 630px){
+	.wr_footer {
+   justify-content: center;
+    flex-wrap: wrap;
+
+}
+}
+@media (max-width: 530px){
+	.header-titel__item {
+    font-size: 35px;
+}
+.buttons__link_margin-top{
+	margin-top: 30px;
+}
+.buttons {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.about-us-box__left {
+    max-width: 800px;
+}
+.about-us-box__left {
+    width: 100%;
+}
+.contacts-form {
+    margin: 0;
+    width: 90%;
+}
+.grandchild__img {
+   
+    width: 120px;
+    height: 120px;
+}
+.about-us-box__slider{
+	width: 280px;
+}
+.communications__text {
+ 
+    font-size: 14px;
+}
+.team__img {
+    margin-bottom: 20px;
 }

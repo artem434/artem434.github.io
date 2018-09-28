@@ -122,7 +122,7 @@ header{
 	padding-bottom: 32px;
 }
 .header-titel__subitem{
-	width: 520px;
+	max-width: : 520px;
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.2;
@@ -247,9 +247,11 @@ header{
 	width: 49%;
 }
 .about-us-box__right{
-	width: 400px;
-	margin: 0 auto;	
-}
+	}
+	.about-us-box__slider{
+		    width: 400px;
+    margin: 0 auto;
+	}
 .about-us-box__titel{
 	color: #fe504f;
 	font-size: 20px;
