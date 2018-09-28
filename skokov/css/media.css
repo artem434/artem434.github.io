@@ -1,0 +1,69 @@
+@media (max-width: 1009px) {
+
+}
+@media (max-width: 991px) {
+	.visible-lg{
+		display: none;
+	}
+	.m-menu-link{
+		display: block;
+	}
+}
+@media (max-width: 821px){
+	.wr-titel{
+		margin-top: 65px;
+	}
+	.header-titel__item{
+		font-size: 50px;
+	}
+	.header-titel__subitem{
+	width: 520px;
+    text-align: left;
+    font-size: 14px;
+	}
+	.logo__link{
+	font-size:28px;
+	
+}
+.log-nav {
+    padding-top: 55px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.buttons__link {
+	width: 180px;
+    height: 55px;
+    line-height: 55px;
+        font-size: 16px;
+}
+.sub-titel__item {
+
+    font-size: 28px;
+ 
+    line-height: 1.3;
+
+}
+.about-us-block {
+    display: inline-block;
+}
+.contacts-box{
+		display: block;
+}
+.about-us-box__left {
+    width: 100%;
+}
+.buttons__link_right {
+  float: none;
+    margin-bottom: 49px;
+}
+.contacts-form {
+   margin: 0;	
+    width: 70%;
+    
+}
+}
+@media (max-width: 680px){
+	
+}
