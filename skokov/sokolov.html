@@ -7,9 +7,10 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="fonts//fonts.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link type="text/css" rel="stylesheet" href="css/animate.css">
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 		<link type="text/css" rel="stylesheet" href="css/media.css">
-		<link type="text/css" rel="stylesheet" href="css/animate.css">
+		
 		<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
@@ -41,14 +42,14 @@
 					</nav>
 				</div>
 				<div class="wr-titel">
-					<div class="header-titel animated pulse">
+					<div class="header-titel ">
 						<h1 class="header-titel__item">Global management
 						consulting agency</h1>
 						<h2 class="header-titel__subitem">Growth doesn't always go the way you expect. Our
 						strategy consultants can help you climb.</h2>
 					</div>
 				</div>
-				<div class="buttons">
+				<div class="buttons animated zoomIn">
 					<a href="#" class="buttons__link buttons__link_margin-top">Get started</a>
 					<a href="#" class="buttons__link buttons__link_margin-top">Learn more</a>
 				</div>
@@ -56,7 +57,7 @@
 		</header>
 		<div class="wr">
 			<section class="services">
-				<div class="titel">
+				<div class="titel wow zoomIn">
 					<h2 class="titel__tit">our services</h2>
 					<p class="titel__text">Our management consulting services focus on our clients' most critical issues and opportunities. We have proven
 					a multiplier effect from optimizing the sum of the parts, not just the individual pieces.</p>
@@ -149,7 +150,7 @@
 		</div>
 		<div class="big-wr">
 			<section class="contact">
-				<div class="sub-titel-contact">
+				<div class="sub-titel-contact ">
 					<div class="sub-titel">
 						<h2 class="sub-titel__item">Contact us for a FREE, NO OBLIGATION confidential exploration of your needs</h2>
 					</div>
@@ -161,7 +162,7 @@
 		</div>
 		<div class="wr">
 			<section class="about-us">
-				<div class="titel">
+				<div class="titel wow zoomIn">
 					<h2 class="titel__tit">about us</h2>
 					<p class="titel__text">SKOKOV is one of the world's leading management consulting firms. We care for our clients' business as our own, they know we're in this together</p>
 				</div>
@@ -461,13 +462,14 @@
 					</div>
 				</div>
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/js.js"></script>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="slick/slick.min.js"></script>
 		
-		<script >
-		
-		</script>
+		<script>
+              new WOW().init();
+        </script>
 	</body>
 </html>
