@@ -1,5 +1,6 @@
-@media (max-width: 1009px) {
-
+@media (max-width: 1257px) {
+    .news-box{
+        display: none;
 }
 @media (max-width: 991px) {
 	.visible-lg{
@@ -17,96 +18,85 @@
 		font-size: 50px;
 	}
 	.header-titel__subitem{
-	
-    text-align: left;
-    font-size: 14px;
+        text-align: left;
+        font-size: 14px;
 	}
 	.logo__link{
-	font-size:28px;
-	
-}
-.log-nav {
-    padding-top: 55px;
-}
-.buttons {
-    display: flex;
-    justify-content: space-around;
-}
-.buttons__link {
-	width: 180px;
-    height: 55px;
-    line-height: 55px;
+	   font-size:28px;
+    }
+    .log-nav {
+        padding-top: 55px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons__link {
+	   width: 180px;
+        height: 55px;
+        line-height: 55px;
         font-size: 16px;
-}
-.sub-titel__item {
-
-    font-size: 28px;
- 
-    line-height: 1.3;
-
-}
-.about-us-block {
-    display: inline-block;
-}
-.contacts-box{
+    }
+    .sub-titel__item {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .about-us-block {
+        display: inline-block;
+    }
+    .contacts-box{
 		display: block;
-}
-.about-us-box__left {
-    width: 100%;
-}
-.about-us-box__right {
-	margin-top: 30px;
-}
-.buttons__link_right {
-  float: none;
-    margin-bottom: 49px;
-}
-.contacts-form {
-   margin: 0;	
-    width: 70%;
-    
-}
+    }
+    .about-us-box__left {
+        width: 100%;
+    }
+    .about-us-box__right {
+	   margin-top: 30px;
+    }
+    .buttons__link_right {
+        float: none;
+        margin-bottom: 49px;
+    }
+    .contacts-form {
+        margin: 0;	
+        width: 70%;
+    }
 }
 @media (max-width: 630px){
 	.wr_footer {
-   justify-content: center;
-    flex-wrap: wrap;
-
-}
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 530px){
 	.header-titel__item {
-    font-size: 35px;
-}
-.buttons__link_margin-top{
-	margin-top: 30px;
-}
-.buttons {
-    width: 100%;
-    flex-wrap: wrap;
-}
-.about-us-box__left {
-    max-width: 800px;
-}
-.about-us-box__left {
-    width: 100%;
-}
-.contacts-form {
-    margin: 0;
-    width: 90%;
-}
-.grandchild__img {
-   
-    width: 120px;
-    height: 120px;
-}
-.about-us-box__slider{
-	width: 280px;
-}
-.communications__text {
- 
-    font-size: 14px;
-}
-.team__img {
-    margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .buttons__link_margin-top{
+	   margin-top: 30px;
+    }
+    .buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .about-us-box__left {
+        max-width: 800px;
+    }
+    .about-us-box__left {
+        width: 100%;
+    }
+    .contacts-form {
+        margin: 0;
+        width: 90%;
+    }
+    .grandchild__img {
+        width: 120px;
+        height: 120px;
+    }
+    .about-us-box__slider{
+    	width: 280px;
+    }
+    .communications__text {
+        font-size: 14px;
+    }
 }

@@ -36,18 +36,18 @@ header{
 	font-size: 32px;
 	font-weight: 700;
 }
-/*m-menu*/
 
+/*m-menu*/
 
 .m-menu-link{
 	display: none;
-		color: #fff;
-		font-size: 25px;
+	color: #fff;
+	font-size: 25px;
 }
 .m-menu__link{
 	font-size: 24px;
-	 text-transform: uppercase;
-	 color: #fff;
+	text-transform: uppercase;
+	color: #fff;
 }
 .m-menu__link:hover{
 	color: #343434; 
@@ -63,8 +63,6 @@ header{
 	font-size: 30px;
 	line-height: 60px;
 	background-color: #fe504f;
-	opacity: ;
-	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -75,7 +73,6 @@ header{
 .m-menu__active{
 	transform: translateX(100%);
 }
-
 .close-menu{
 	position: fixed;
 	right: 70px;
@@ -90,7 +87,7 @@ header{
 	color: #343434;
 }
 
-/*navigation*/
+/*menu*/
 
 .menu{
 	text-align: center;
@@ -100,9 +97,9 @@ header{
 	margin-right: 50px;
 }
 .menu__link{
-	 font-size: 14px;
-	 margin-right: 50px;
-	 color: white;
+	font-size: 14px;
+	margin-right: 50px;
+	color: white;
 }
 .menu__link:last-child{
 	margin: 0px;
@@ -145,7 +142,6 @@ header{
 	border-radius: 40px;
 	line-height: 65px;
 }
-
 .buttons__link:hover{
 	background-color: #343434;
 }
@@ -202,7 +198,9 @@ header{
 	line-height: 24px;
 	padding: 17px 0 57px 0;
 }
+
 /*contact*/
+
 .contact{
 	margin-bottom: 80px;
 	height: auto;
@@ -247,12 +245,11 @@ header{
 .about-us-box__left{
 	width: 49%;
 }
-.about-us-box__right{
-	}
-	.about-us-box__slider{
-		    width: 400px;
+
+.about-us-box__slider{
+	width: 400px;
     margin: 0 auto;
-	}
+}
 .about-us-box__titel{
 	color: #fe504f;
 	font-size: 20px;
@@ -304,8 +301,6 @@ header{
 	position: relative;
 }
 .team__hover{
-	background-color: #fe504f;
-	position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -313,6 +308,8 @@ header{
 	display: none;
 	color: #ffffff;	
 	font-weight: 700;
+	position: absolute;
+	background-color: #fe504f;
 }
 
 .team__item:hover .team__hover {
@@ -339,6 +336,7 @@ header{
 	font-size: 12px;
 	font-weight: 400;
 }
+
 /*what-we-do*/
 
 .what-we-do{
@@ -371,6 +369,7 @@ header{
 }
 
 /*news*/
+
 .mobile-news-box{
 	display: flex;
 	flex-wrap: wrap;
@@ -384,13 +383,8 @@ header{
 	height: 240px;
 	background-color: #343434;
 }
-
-
-
-
 .news-box{
-	display: none;
-	
+	display: flex;
 	flex-wrap: wrap;
 }
 .news-box__item_big{
@@ -556,7 +550,6 @@ header{
 	margin: 15px 0 15px;
 	border: none;
 }
-
 .footer{
 	width: 100%;
 	height: 100px;
@@ -579,8 +572,5 @@ header{
 	justify-content: space-between;
 }
 .footer-block-icon__item:hover{
-
-
-
 	color: #fff;
 }
