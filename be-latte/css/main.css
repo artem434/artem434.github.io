@@ -6,14 +6,14 @@
 body {
 	font-family: 'Lato', sans-serif;
 font-family: 'Playfair Display', serif;
-	max-width: 1300px;
+	max-width: 1400px;
 	background-color: white;
 	margin: 0px auto;
 }
 header{
 	margin: 0px auto;
-	width: 98%;
-	height: 700px;
+	width: 100%;
+	height: 100vh;
 	background: url(../img/coffee-shop.png) no-repeat center center;
 	background-size: cover;
 }
@@ -35,17 +35,49 @@ header{
 
 }
 .topmenu__link{
-	color: #fff;
+	color: #f5d76e;
 	text-decoration: none;
 	line-height: 100px;
 	padding-right: 20px;
 	font-size: 18px;
 	font-family: Playfair Display bold;
 	text-transform: capitalize;
+	
 }
-.topmenu__link:hover{
+.topmenu__link span{
 	color: #f5d76e;
 }
+/* Эффект 16: наложение справа */
+.cl-effect-16 a {
+	color: #6f8686;
+	text-shadow: 0 0 1px rgba(111,134,134,0.3);
+}
+
+.cl-effect-16 a::before {
+	color: #fff;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-16 a:hover::before,
+.cl-effect-16 a:focus::before {
+	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	opacity: 1;
+}
+
+
+
 .topmenu__logo{
 	max-width: 100%;
 }
@@ -80,8 +112,74 @@ font-size: 16px;
 	font-family: loto Heavy;
 	text-transform: capitalize;
 	line-height: 50px;
-	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
 }
+
+
+
+
+
+
+
+.button {
+	color: rgba(255,255,255,1);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.button a{
+	color: rgba(51,51,51,1);
+	text-decoration: none;
+	display: block;
+}
+.button::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	border: 1px solid rgba(255,255,255,0.5);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button:hover::before{
+	opacity: 0;
+	-webkit-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+.button::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.5);;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0.5,0.5);
+	transform: scale(0.5,0.5);
+}
+.button:hover::after{
+	opacity: 1 ;
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+}
+
 
 /*abaut*/
 .abaut{
@@ -122,10 +220,11 @@ font-size: 16px;
 	width: 98%;
 }
 .menubox{
-display: grid;
-grid-template-columns: repeat(3, 395px);
+	display: grid;
+	grid-template-columns: repeat(3, 395px);
 	grid-column-gap: 40px;
 	grid-template-rows: 400px;
+	justify-content: center;
 }
 .menubox__coffee{
 	background: url(../img/cup%20of%20coffee.png) no-repeat;
