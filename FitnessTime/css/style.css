@@ -452,6 +452,7 @@ input::placeholder {
 	background-color: #e25050;
 	color: #fff;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 .submit__text {
 	padding-top: 20px;
