@@ -1,0 +1,21 @@
+@media (max-width: 1100px) {
+    .about-us-content{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+    }
+    .about-us-slider{
+        width: 100%;
+    }
+    .about-us-wahatis{
+        width: 70%;
+    }
+}
+@media (max-width: 700px) {
+    .navigation{
+        display: none;
+    }
+}
