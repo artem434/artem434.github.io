@@ -92,7 +92,7 @@ body {
   -ms-transform: translatex(-100vw);
   box-sizing: border-box;
   pointer-events: none;
-  padding-top: 125px;
+  padding-top: 100px;
   transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
   border-bottom-left-radius: 100vw;
   
@@ -124,7 +124,7 @@ body {
 }
 .drawer-list li a {
   text-decoration: none;
-  color: #FEFEFE;
+  color: #ff2000;
   text-align: center;
   display: block;
   padding: 1rem;
@@ -140,8 +140,8 @@ body {
 
 .drawer-list li a:hover {
   cursor: pointer;
-  background-color: #88c2f8;
-  background-color: rgba(255, 32, 0, 0.7);
+  
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 input.hamburger {
@@ -396,6 +396,7 @@ label.hamburger {
 
 .slick-arrow{
 	position: absolute;
+	cursor: pointer;
 }
 .slick-arrow-left{
 	top: 100px;

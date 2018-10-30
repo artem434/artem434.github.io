@@ -1,29 +1,5 @@
-$(document).ready(function() {
-	$('.about-us-box__slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay:false,
-		autoplaySpeed:3000,
-		dots:true
-	});
-});	
-$(function() {
-	var link = $ ('.m-menu-link');
-	var close = $ ('.close-menu');
-	var menu = $ ('.m-menu');
-	link.on('click',function(event){
-		event.preventDefault();
-		menu.toggleClass('m-menu__active');
-	});
-	close.on('click',function(event){
-		event.preventDefault();
-		menu.toggleClass('m-menu__active');
-})
-	;});
 
-
-
-
+/* Mobile Menu*/
 
 var ww = document.body.clientWidth;
 
@@ -73,4 +49,86 @@ var adjustMenu = function() {
 		});
 	}
 }
+/*Slider Header*/
+
+$('.slider').slick({
+	dots: true,
+	infinite: true,
+	speed: 500,
+	fade: true,
+	cssEase: 'linear',
+	autoplay:false,
+	dots:false,
+	prevArrow: '<img class="slick-arrow-left" src="img/Left-Navigation-Button.png" alt="Left-Navigation">',
+  	nextArrow: '<img class="slick-arrow-right" src="img/Right-Navigation-Button.png" alt="Right-Navigation">'
+}); 
+
+/*About-Us-Slider*/
+
+$('.about-us-slider').slick({
+	dots: true,
+	infinite: true,
+	speed: 500,
+	fade: true,
+	cssEase: 'linear',
+	autoplay:false,
+	dots:false,
+	prevArrow: '<div class="about-us-arrow-left  slider-arrow"><i class="fas fa-angle-left"></i></div>',
+  	nextArrow: '<div class="about-us-arrow-right slider-arrow"><i class="fas fa-angle-right"></i></div>'
+});
+
+/*Clients-Say-Slider*/
+
+$('.clients-say-slider-wr ').slick({
+	dots: true,
+	infinite: true,
+	speed: 500,
+	fade: true,
+	cssEase: 'linear',
+	autoplay:false,
+	dots:false,
+	prevArrow: '<div class="clients-say-slider-left slider-arrow"><i class="fas fa-angle-left"></i></div>',
+  	nextArrow: '<div class="clients-say-slider-right slider-arrow"><i class="fas fa-angle-right"></i></div>'
+});
+
+/*Client-Logo-Slider*/
+
+$('.client-logo-slider').slick({
+	infinite: true,
+	slidesToShow: 5,
+	infinite: true,
+	arrows:false,
+	autoplay:true,
+	autoplaySpeed:2000,
+	slidesToScroll: 2,
+	responsive: [
+	{
+		breakpoint: 720,
+		settings: {
+			slidesToShow: 4,
+			slidesToScroll: 4
+		}
+	},
+	{
+		breakpoint: 576,
+		settings: {
+			slidesToShow: 3,
+			slidesToScroll: 3
+		}
+	},
+	{
+		breakpoint: 350,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 2
+		}
+	}
+	]
+});
+
+/*Fancybox*/
+
+$("[data-fancybox]").fancybox({
+  	transitionEffect: 'slide',
+});
 
