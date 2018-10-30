@@ -12,6 +12,7 @@
 		<title>oxxo</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:300,400" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link type="text/css" rel="stylesheet" href="css/animate.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/media.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -22,7 +23,7 @@
 				<div class="wr">
 					<div class="navigation-wr">
 						<!-- header-logo -->
-						<div class="header-logo">
+						<div class="header-logo flip wow animate">
 							<a href="#" class="header-logo__titel">oxxo</a>
 							<p class="header-logo__subtitel">RESPONSIVE THEME</p>
 						</div>		
@@ -119,7 +120,7 @@
 						</defs>
 					</svg>
 					<!-- Slider Header -->
-					<div class="slider-wr">
+					<div class="slider-wr ">
 						 <div class="slider">
 						    <div class="slider__item">
 						    	<h1 class="slider__titel">WE ARE. OXXO.</h1>
@@ -136,7 +137,7 @@
 						    <div class="slider__item">
 								<div class="slider-flex">
 							    	<div class="sim-button button24 slider__button">
-							    		<  	 class="slider__button__text" >DIGITAL AGENCY</span>
+							    		<span class="slider__button__text" >DIGITAL AGENCY</span>
 							    	</div>
 							    	<div class="sim-button button24 slider__button slider__button__center">
 							    		<span class="slider__button__text"   >WEB DESIGN</span>
@@ -160,7 +161,7 @@
 					<hr class="headline__hr">
 					<p class="headline__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				</div>
-				<div class="about-us-content">
+				<div class="about-us-content fadeInLeft wow animate">
 					<!-- About-Us-Slider -->
 					<div class="about-us-slider "><!-- About-Us-Slider -->
 						<img class="about-us-slider__img" src="img/big-firmnews-15374254010.jpg" alt="">
@@ -727,6 +728,20 @@
         <script src="js/uikit-icons.min.js"></script>
         <script src="js/js.js"></script>
 		<script>
+
+jQuery(document).ready(function($) {
+    $('.headline').addClass('wow animated fadeInUp'); 
+    $('.work-box').addClass('wow animated zoomIn'); 
+    $('.wow').attr('data-wow-duration', '2.8s' );
+	$('.we-amazing__item,.we-team__item,.footer__item').addClass('wow animated bounceIn');
+	$('.responsive-box__item').addClass('wow animated fadeInRight');
+
+
+});
+jQuery(document).ready(function($) {
+new WOW().init();
+});
+</script> 	
             
 	</body>
 </html>
