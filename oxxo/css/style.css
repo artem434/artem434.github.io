@@ -30,10 +30,10 @@ body {
 	border-bottom: 3px solid #ff7200;
 }
 .navigation-wr{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:-o-flex;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -298,11 +298,11 @@ input.hamburger:checked ~ label > i:before {
 input.hamburger:checked ~ label > i:after {
   	transform: translate(-50%, -50%) rotate(-315deg);
 }
-input.hamburger:checked ~ label close {
+input.hamburger:checked ~ label .close {
   	color: #ff2000;
   	width: 100%;
 }
-input.hamburger:checked ~ label open {
+input.hamburger:checked ~ label .menu {
   	color: transparent;
   	width: 0;
 }
@@ -317,25 +317,25 @@ label.hamburger {
 label.hamburger:hover {
   	cursor: pointer;
 }
-label.hamburger text close,
-label.hamburger text open {
+label.hamburger text .close,
+label.hamburger text .menu {
   	text-transform: uppercase;
   	font-size: .8em;
-  	align-text: center;
   	position: absolute;
   	transform: translateY(50px);
   	text-align: center;
   	overflow: hidden;
   	transition: width .25s .35s, color .45s .35s;
 }
-label.hamburger text close {
+label.hamburger text .close {
   	color: transparent;
   	right: 0;
   	width: 0;
 }
-label.hamburger text open {
+label.hamburger text .menu {
   	color: #ff2000;
   	width: 100%;
+  	margin: 0;
 }
 label.hamburger > i {
   	position: absolute;
@@ -832,9 +832,7 @@ label.hamburger {
     margin: 0 auto;
     align-items: center;
 }
-.client-logo-slidtr__img{
-	width: 19x00px;
-}
+
 .fa-angle-left{
 	font-size: 30px;
 	text-align: center;
