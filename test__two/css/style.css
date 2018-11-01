@@ -1,7 +1,7 @@
 @font-face{
 	font-family:OpenSansCondensed-Light;
 	src:url('../fonts/OpenSansCondensed-Light.ttf') format('ttf'),
-    url('../fonts/OpenSansCondensed-Light.woff') format('woff');
+    	url('../fonts/OpenSansCondensed-Light.woff') format('woff');
 	font-weight: normal;
  	font-style: normal;
 }
@@ -9,8 +9,8 @@
   	margin: 0;
   	padding: 0;
   	font-family: 'Open Sans Condensed', sans-serif;
-  		line-height: 22px;
-  font-size: 14px;
+  	line-height: 22px;
+  	font-size: 14px;
 }
 
 html,
@@ -33,7 +33,6 @@ header{
 	background-color: #dcdcdc;
 	height: 230px;
 	z-index: 999;
-
 }
 
 /* header */
